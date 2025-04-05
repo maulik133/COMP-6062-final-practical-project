@@ -1,0 +1,111 @@
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cfd3d6;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 550;
+    background-image: linear-gradient(to left, #a10f25, #b393d3);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+input {
+    margin-bottom: 50px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-8 {
+    width: 15em;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    display: inline-block;
+}
+
+.col-md-6 {
+    width: 15em;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+.icon {
+    width: 30px;  
+    height: 30px;
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+.text {
+    margin-bottom: 0px;
+}
+
+.btn {
+    border: 2px solid #422800 !important;
+    border-radius: 15px !important;
+    box-shadow: #313de4 3px 3px 0 0 !important;
+    color: #422800 !important;
+    cursor: pointer;
+    display: inline-block !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;  /* Reduced font size */
+    padding: 0 14px !important;  /* Reduced padding */
+    line-height: 40px !important; /* Reduced height */
+    text-align: center !important;
+    text-decoration: none !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    touch-action: manipulation !important;
+    background-color: #9bb2ff !important;
+    font-style: italic !important;
+}
+
+.btn:hover {
+    box-shadow: rgba(1, 53, 21, 0.322) 0 -20px 14px -10px inset,
+                rgba(1, 51, 20, 0.35) 0 1px 2px,
+                rgba(1, 51, 20, 0.35) 0 2px 4px,
+                rgba(1, 51, 20, 0.35) 0 4px 6px,
+                rgba(1, 51, 20, 0.35) 0 6px 12px,
+                rgba(1, 51, 20, 0.35) 0 12px 24px !important;
+    transform: scale(1.03) rotate(-1deg) !important;
+}
+
+
+.dictionary {
+    background-color: #9bb2ff !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: black !important;
+}
+
+.weather {
+    background-color: #9bb2ff !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: black !important;
+    margin-bottom: 10px;
+}
+
+.profile {
+    background-color: #9bb2ff !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: black !important;
+}
