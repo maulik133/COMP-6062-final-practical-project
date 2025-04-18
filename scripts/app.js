@@ -17,7 +17,10 @@ const app = Vue.createApp({
                 temperature: "",
                 wind: "",
                 description: "",
-                location: ""
+                location: "",
+                latitude: "",
+                longitude: "",
+                population: ""
             },
 
             // Dictionary Data
@@ -54,8 +57,11 @@ const app = Vue.createApp({
                         this.weather.wind = data.wind_speed;
                         this.weather.description = data.weather_description;
                         this.weather.location = `${data.location.city}, ${data.location.region}, ${data.location.country}`;
+                        this.weather.latitude = data.location.latitude;
+                        this.weather.longitude = data.location.longitude;
+                        this.weather.population = data.location.population;
                     } else {
-                        alert("Weather data not available. check every field input.");
+                        alert("Weather data not available. Check every field input.");
                     }
                 })
                 .catch(error => console.error("Error fetching weather:", error));
@@ -76,7 +82,7 @@ const app = Vue.createApp({
                         this.dictionary.phonetic = data[0].phonetic;
                         this.dictionary.definition = data[0].definition;
                     } else {
-                        alert("word definition not avilable. Try another word.");
+                        alert("Word definition not available. Try another word.");
                     }
                 })
                 .catch(error => console.error("Error fetching definition:", error));
@@ -84,8 +90,7 @@ const app = Vue.createApp({
     },
 
     mounted() {
-        this.fetchUser();  
-        this.fetchWeather();  
+        this.fetchUser();  // Only load user on startup
     }
 });
 

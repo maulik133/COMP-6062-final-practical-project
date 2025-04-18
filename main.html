@@ -23,7 +23,7 @@
                     <div class="col-md-6">
                         <p><strong>Name:</strong> {{ user.first_name }} {{ user.last_name }}</p>
                         <div class="col-md-6">
-                        <img :src="user.profile_picture" alt="Profile Picture" class="img-fluid">
+                            <img :src="user.profile_picture" alt="Profile Picture" class="img-fluid">
                         </div>
                         <p><strong>Age:</strong> {{ user.age }}</p>
                         <button class="btn profile" @click="fetchUser">New Profile</button>
@@ -46,6 +46,9 @@
                     <p class="text"><strong>Wind:</strong> {{ weather.wind }}</p>
                     <p class="text"><strong>Description:</strong> {{ weather.description }}</p>
                     <p class="text"><strong>Location:</strong> {{ weather.location }}</p>
+                    <p class="text"><strong>Latitude:</strong> {{ weather.latitude }}</p>
+                    <p class="text"><strong>Longitude:</strong> {{ weather.longitude }}</p>
+                    <p class="text"><strong>Population:</strong> {{ weather.population }}</p>
                 </div>
             </div>
 
